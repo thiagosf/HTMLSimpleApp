@@ -1,0 +1,11 @@
+{
+  "author": "Thiago Silva Ferreira",
+  "name": "html-simple-app",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-uglify": "latest", 
+    "grunt-contrib-compass": "latest", 
+    "grunt-contrib-watch": "latest"
+  }
+}
