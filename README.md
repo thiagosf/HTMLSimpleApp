@@ -1,5 +1,4 @@
-HTML Simple App
-----------------
+# HTML Simple App
 
 Estrutura básica para sites simples. 
 
