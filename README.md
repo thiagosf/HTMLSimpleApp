@@ -11,13 +11,13 @@ Estrutura básica para sites simples.
 
 ## Instalação (2 passos)
 
-1. Clonar o respositório
+_Clonar o respositório_
 
 ```
 $ git clone https://github.com/thiagosf/HTMLSimpleApp.git site
 ```
 
-2. Instalar módulos do grunt e componentes do bower
+_Instalar módulos do grunt e componentes do bower_
 
 ```
 $ npm install
