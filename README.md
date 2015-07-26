@@ -15,15 +15,31 @@ Estrutura básica para sites estáticos.
 
 ### Clonar o respositório
 
-```
-$ git clone https://github.com/thiagosf/HTMLSimpleApp.git site
+```sh
+git clone https://github.com/thiagosf/HTMLSimpleApp.git site
 ```
 
 ### Instalar módulos do grunt e componentes do bower
 
+```sh
+npm install
+bower install
 ```
-$ npm install
-$ bower install
+
+### Configurar nginx
+
+Edite o arquivo `conf/nginx.conf`, alterando o _server_name_ (caso utilize apache, ignore essa etapa)
+
+```
+server {
+  listen 80;
+  server_name www.html-simple-app.dev html-simple-app.dev;
+  root /var/www/html-simple-app;
+  location / {
+    autoindex on;
+    try_files $uri /index.html;
+  }
+}
 ```
 
 ### Codar
