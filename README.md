@@ -1,27 +1,31 @@
 # HTML Simple App
 
-Estrutura básica para sites simples. 
+Estrutura básica para sites estáticos. 
 
-## Ferramentas/Módulos pré-instalados
+## Ferramentas/módulos pré-instalados
 
 * Grunt
 * Sass
 * Compass
 * Bower
+* Foundation
+* FastClick
 
-## Instalação (2 passos)
+## Instalação
 
-_Clonar o respositório_
+### Clonar o respositório
 
 ```
 $ git clone https://github.com/thiagosf/HTMLSimpleApp.git site
 ```
 
-_Instalar módulos do grunt e componentes do bower_
+### Instalar módulos do grunt e componentes do bower
 
 ```
 $ npm install
 $ bower install
 ```
 
-Pronto, agora é só brincar =D
+### Codar
+
+Pronto, agora é só se divertir codando :stuck_out_tongue_winking_eye:

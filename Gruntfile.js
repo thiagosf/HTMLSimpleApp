@@ -17,8 +17,9 @@ module.exports = function(grunt) {
         files: {
           'js/min/plugins-min.js': [
             'vendor/jquery/dist/jquery.min.js', 
-            'vendor/mustache/mustache.min.js', 
-            'vendor/jquery.easing/js/jquery.easing.min.js'
+            'vendor/fastclick/lib/fastclick.js', 
+            'vendor/foundation/js/foundation/foundation.js', 
+            'vendor/foundation/js/foundation/foundation.interchange.js', 
           ]
         }
       }
@@ -44,7 +45,7 @@ module.exports = function(grunt) {
           spawn: false,
         }
       }
-    } // watch
+    }, // watch
   });
   
   // Plugins do grunt
@@ -52,9 +53,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // Tarefas que serao executadas
+  // Tarefas
   grunt.registerTask('default', ['compass', 'uglify']);
-
-  // Tarefa para watch
   grunt.registerTask('w', ['watch']);
+  grunt.registerTask('p', ['uglify:plugins']);
 };

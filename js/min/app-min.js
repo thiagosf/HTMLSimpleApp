@@ -1,2 +1,2 @@
-/*! ato by Thiago Silva Ferreira 2015-04-03 */
-!function($){var App=function(){};App.prototype.el={},App.prototype.init=function(){},$(function(){var app=new App;app.init()})}(jQuery,window,void 0);
+/*! html-simple-app by Thiago Silva Ferreira 2015-07-26 */
+!function($,window){var App=function(){};App.prototype.init=function(){this.setLibs(),console.log("App.init")},App.prototype.setLibs=function(first_argument){$(document).foundation(),FastClick.attach(document.body)},$(function(){var app=new App;app.init()})}(jQuery,window,void 0);
